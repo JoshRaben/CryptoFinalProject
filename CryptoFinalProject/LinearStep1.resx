@@ -117,11 +117,15 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Untitled Diagram" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Untitled Diagram.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Untitled Diagram (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Untitled Diagram (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="infoText2.Text" xml:space="preserve">
+    <value>One of the main weaknesses of these types of Block Ciphers is that the supposed 'non-linear' S-Boxes can be analyzed to find linear tendencies. This is your first task. 
+You will need to create a linear approximation table for the S-box that is being used. 
+
+In this table, we will modify the known pre-round AND post-round text (after it goes through the S-box) using various values to check if the values have a certain property called 'parity'. 
+We will then check to see if the parity for the pre-round text and the post-round text are the same. We will repeat this for all of the known plaintext/ciphertext pairs and keep a tally for 
+how many are the same. This gives us a useful measure on how 'linear' the S-box is. If the parity of the pre-round and post-round values for many of the known plaintext samples are 
+the same on certain 'masks', then we can use those masks to make cracking the key easier.  For example, if we have 20 known plaintext/ciphertext pairs, and after modifying all 20, we 
+notice that 18 of the modified values have similar parity, that would be a good option to use when cracking the key. If only 10 have the same, then that value would be suboptimal, as we expect around 
+50% of the values to have different parities from the beginning.</value>
   </data>
 </root>
