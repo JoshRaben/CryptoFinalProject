@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CryptoFinalProject
 {
-    public partial class DifferentialHome : Form
+    public partial class DiffHome : Form
     {
-        public DifferentialHome()
+        public DiffHome()
         {
             InitializeComponent();
         }

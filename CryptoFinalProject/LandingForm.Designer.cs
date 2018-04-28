@@ -45,17 +45,20 @@
             // 
             // linear
             // 
-            this.linear.Location = new System.Drawing.Point(108, 207);
+            this.linear.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linear.Location = new System.Drawing.Point(171, 207);
             this.linear.Name = "linear";
             this.linear.Size = new System.Drawing.Size(151, 68);
             this.linear.TabIndex = 3;
+            this.linear.TabStop = false;
             this.linear.Text = "Linear Cryptanalysis";
             this.linear.UseVisualStyleBackColor = true;
             this.linear.Click += new System.EventHandler(this.linear_Click);
             // 
             // differential
             // 
-            this.differential.Location = new System.Drawing.Point(516, 207);
+            this.differential.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.differential.Location = new System.Drawing.Point(471, 207);
             this.differential.Name = "differential";
             this.differential.Size = new System.Drawing.Size(163, 68);
             this.differential.TabIndex = 4;

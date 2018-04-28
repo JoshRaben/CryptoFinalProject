@@ -32,11 +32,13 @@
             this.home = new System.Windows.Forms.Button();
             this.next = new System.Windows.Forms.Button();
             this.back = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.titleText = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.nextBtn = new System.Windows.Forms.Button();
+            this.prevBtn = new System.Windows.Forms.Button();
+            this.K1GuessPicBox = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.K1GuessPicBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // home
@@ -57,6 +59,7 @@
             this.next.TabIndex = 1;
             this.next.Text = "Next";
             this.next.UseVisualStyleBackColor = true;
+            this.next.Click += new System.EventHandler(this.next_Click);
             // 
             // back
             // 
@@ -66,15 +69,7 @@
             this.back.TabIndex = 2;
             this.back.Text = "Back";
             this.back.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 63);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(252, 551);
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
+            this.back.Click += new System.EventHandler(this.back_Click);
             // 
             // titleText
             // 
@@ -86,21 +81,52 @@
             this.titleText.TabIndex = 4;
             this.titleText.Text = "Making Educated Guesses at K1";
             // 
-            // pictureBox2
+            // nextBtn
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(270, 63);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(861, 469);
-            this.pictureBox2.TabIndex = 5;
-            this.pictureBox2.TabStop = false;
+            this.nextBtn.Location = new System.Drawing.Point(698, 491);
+            this.nextBtn.Name = "nextBtn";
+            this.nextBtn.Size = new System.Drawing.Size(75, 23);
+            this.nextBtn.TabIndex = 6;
+            this.nextBtn.Text = "Next Step";
+            this.nextBtn.UseVisualStyleBackColor = true;
+            this.nextBtn.Click += new System.EventHandler(this.nextBtn_Click);
+            // 
+            // prevBtn
+            // 
+            this.prevBtn.Location = new System.Drawing.Point(560, 491);
+            this.prevBtn.Name = "prevBtn";
+            this.prevBtn.Size = new System.Drawing.Size(75, 23);
+            this.prevBtn.TabIndex = 7;
+            this.prevBtn.Text = "Prev. Step";
+            this.prevBtn.UseVisualStyleBackColor = true;
+            this.prevBtn.Click += new System.EventHandler(this.prevBtn_Click);
+            // 
+            // K1GuessPicBox
+            // 
+            this.K1GuessPicBox.Image = ((System.Drawing.Image)(resources.GetObject("K1GuessPicBox.Image")));
+            this.K1GuessPicBox.Location = new System.Drawing.Point(270, 63);
+            this.K1GuessPicBox.Name = "K1GuessPicBox";
+            this.K1GuessPicBox.Size = new System.Drawing.Size(861, 469);
+            this.K1GuessPicBox.TabIndex = 5;
+            this.K1GuessPicBox.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(12, 63);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(252, 551);
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
             // 
             // LinearStep2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1165, 636);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.prevBtn);
+            this.Controls.Add(this.nextBtn);
+            this.Controls.Add(this.K1GuessPicBox);
             this.Controls.Add(this.titleText);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.back);
@@ -108,8 +134,8 @@
             this.Controls.Add(this.home);
             this.Name = "LinearStep2";
             this.Text = "LinearStep2";
+            ((System.ComponentModel.ISupportInitialize)(this.K1GuessPicBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -122,6 +148,8 @@
         private System.Windows.Forms.Button back;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label titleText;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox K1GuessPicBox;
+        private System.Windows.Forms.Button nextBtn;
+        private System.Windows.Forms.Button prevBtn;
     }
 }

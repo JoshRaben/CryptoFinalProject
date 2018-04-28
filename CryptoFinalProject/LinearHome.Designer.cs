@@ -94,7 +94,7 @@
             // back
             // 
             this.back.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.back.Location = new System.Drawing.Point(345, 432);
+            this.back.Location = new System.Drawing.Point(610, 416);
             this.back.Name = "back";
             this.back.Size = new System.Drawing.Size(123, 62);
             this.back.TabIndex = 8;
@@ -105,7 +105,7 @@
             // next
             // 
             this.next.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.next.Location = new System.Drawing.Point(624, 432);
+            this.next.Location = new System.Drawing.Point(361, 416);
             this.next.Name = "next";
             this.next.Size = new System.Drawing.Size(123, 62);
             this.next.TabIndex = 9;

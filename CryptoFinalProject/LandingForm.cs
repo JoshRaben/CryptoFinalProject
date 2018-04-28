@@ -27,9 +27,9 @@ namespace CryptoFinalProject
 
         private void differential_Click(object sender, EventArgs e)
         {
-            DifferentialHome differentialHome = new DifferentialHome();
-            differentialHome.Tag = this;
-            differentialHome.Show(this);
+            DiffHome diffHome = new DiffHome();
+            diffHome.Tag = this;
+            diffHome.Show(this);
             Hide();
         }
     }
