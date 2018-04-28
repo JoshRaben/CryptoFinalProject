@@ -32,5 +32,25 @@ namespace CryptoFinalProject
             diffHome.Show(this);
             Hide();
         }
+
+        private bool validateKeys()
+        {
+            if (LinearKeyTxtBox.Text == "m@yB3" && DiffKeyTxtBox.Text == "Ca11m3")
+            {
+                return true;
+            }
+            return false;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (validateKeys())
+            {
+                Secret secret = new Secret();
+                secret.Tag = this;
+                secret.Show(this);
+                Hide();
+            }
+        }
     }
 }
