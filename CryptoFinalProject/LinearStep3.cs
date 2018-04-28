@@ -57,6 +57,11 @@ namespace CryptoFinalProject
                 feedbackText.Text = "Correct! We have all of the information we need to \n" +
                                     "efficiently calcuate a guess at K2. We know P, M, K1,\n" +
                                     "C, and how the S-Box works.";
+                infoText2.Text = "Now to confirm that the K1 and K2 you picked are correct,\n" +
+                                 "simply run through the entire process of encrypting the\n" +
+                                 "plaintext through both rounds. If it ends up not working,\n" +
+                                 "simply repeat the process on the previous slide for the \n" +
+                                 "next likely key.";
                 isCorrect = true;
             }
             else if (currItem == "Brute force K2 as previously running through every possible value using the masks.")

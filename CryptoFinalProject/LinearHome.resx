@@ -123,6 +123,12 @@ that we will exploit with Linear Cryptanalysis are the S-boxes, so for the purpo
 of a more simplified diagram we have removed elements that are already 
 considered linear.</value>
   </data>
+  <data name="infoText2.Text" xml:space="preserve">
+    <value>Your task, should you choose to accept it is to determine the value of K1 and K2. 
+Linear Crypanalysis is an attack in which you as an attacker possess mulitple Plain 
+Text/Cipher Text pairs. You will use this information along with the power of math 
+to identify relationships between the Pre-Round Text and Post-Round Text. </value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="pictureBox1.ErrorImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -731,11 +737,5 @@ considered linear.</value>
         oDbFq1kULwCgNsWrWRQvAKA2xatZFC8AoDbFq1kULwCgNsWrWRQvAKA2xatZFC8AoDbFq1kULwCgtigO
         0iy9/5QAwET6tV/7/wGJYlFCiZ7t0gAAAABJRU5ErkJggg==
 </value>
-  </data>
-  <data name="infoText2.Text" xml:space="preserve">
-    <value>Your task, should you choose to accept it is to determine the value of K1 and K2. 
-Linear Crypanalysis is an attack in which you as an attacker possess mulitple Plain 
-Text/Cipher Text pairs. You will use this information along with the power of math 
-to identify relationships between the Pre-Round Text and Post-Round Text. </value>
   </data>
 </root>

@@ -39,6 +39,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.feebackTitle = new System.Windows.Forms.Label();
             this.feedbackText = new System.Windows.Forms.Label();
+            this.infoText2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -148,11 +149,21 @@
             this.feedbackText.Size = new System.Drawing.Size(0, 20);
             this.feedbackText.TabIndex = 12;
             // 
+            // infoText2
+            // 
+            this.infoText2.AutoSize = true;
+            this.infoText2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.infoText2.Location = new System.Drawing.Point(350, 449);
+            this.infoText2.Name = "infoText2";
+            this.infoText2.Size = new System.Drawing.Size(0, 20);
+            this.infoText2.TabIndex = 13;
+            // 
             // LinearStep3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1082, 672);
+            this.Controls.Add(this.infoText2);
             this.Controls.Add(this.feedbackText);
             this.Controls.Add(this.feebackTitle);
             this.Controls.Add(this.pictureBox1);
@@ -164,6 +175,7 @@
             this.Controls.Add(this.back);
             this.Controls.Add(this.next);
             this.Name = "LinearStep3";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LinearStep3";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -183,5 +195,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label feebackTitle;
         private System.Windows.Forms.Label feedbackText;
+        private System.Windows.Forms.Label infoText2;
     }
 }

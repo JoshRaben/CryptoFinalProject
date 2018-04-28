@@ -133,6 +133,7 @@
             this.Controls.Add(this.next);
             this.Controls.Add(this.home);
             this.Name = "LinearStep2";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LinearStep2";
             ((System.ComponentModel.ISupportInitialize)(this.K1GuessPicBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

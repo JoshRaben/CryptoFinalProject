@@ -115,6 +115,7 @@
             this.Controls.Add(this.linear);
             this.Controls.Add(this.infoText);
             this.Name = "LandingForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LandingForm";
             this.ResumeLayout(false);
             this.PerformLayout();

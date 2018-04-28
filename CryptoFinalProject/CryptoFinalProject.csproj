@@ -94,6 +94,9 @@
     <Compile Include="TableCreation.Designer.cs">
       <DependentUpon>TableCreation.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="DiffHome.resx">
+      <DependentUpon>DiffHome.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LandingForm.resx">
       <DependentUpon>LandingForm.cs</DependentUpon>
     </EmbeddedResource>
