@@ -28,9 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LinearStep2));
             this.home = new System.Windows.Forms.Button();
             this.next = new System.Windows.Forms.Button();
             this.back = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.titleText = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // home
@@ -61,17 +67,51 @@
             this.back.Text = "Back";
             this.back.UseVisualStyleBackColor = true;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(12, 63);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(252, 551);
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            // 
+            // titleText
+            // 
+            this.titleText.AutoSize = true;
+            this.titleText.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.titleText.Location = new System.Drawing.Point(435, 12);
+            this.titleText.Name = "titleText";
+            this.titleText.Size = new System.Drawing.Size(355, 25);
+            this.titleText.TabIndex = 4;
+            this.titleText.Text = "Making Educated Guesses at K1";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(270, 63);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(861, 469);
+            this.pictureBox2.TabIndex = 5;
+            this.pictureBox2.TabStop = false;
+            // 
             // LinearStep2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1165, 636);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.titleText);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.back);
             this.Controls.Add(this.next);
             this.Controls.Add(this.home);
             this.Name = "LinearStep2";
             this.Text = "LinearStep2";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -80,5 +120,8 @@
         private System.Windows.Forms.Button home;
         private System.Windows.Forms.Button next;
         private System.Windows.Forms.Button back;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label titleText;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
