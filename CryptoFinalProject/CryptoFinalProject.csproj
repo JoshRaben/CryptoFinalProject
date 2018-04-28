@@ -50,6 +50,42 @@
     <Compile Include="DiffHome.Designer.cs">
       <DependentUpon>DiffHome.cs</DependentUpon>
     </Compile>
+    <Compile Include="DiffMission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DiffMission.Designer.cs">
+      <DependentUpon>DiffMission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DiffStep1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DiffStep1.Designer.cs">
+      <DependentUpon>DiffStep1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DiffStep2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DiffStep2.Designer.cs">
+      <DependentUpon>DiffStep2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DiffStep3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DiffStep3.Designer.cs">
+      <DependentUpon>DiffStep3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DiffStep4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DiffStep4.Designer.cs">
+      <DependentUpon>DiffStep4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DiffTableCreation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DiffTableCreation.Designer.cs">
+      <DependentUpon>DiffTableCreation.cs</DependentUpon>
+    </Compile>
     <Compile Include="LandingForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,6 +138,15 @@
     </Compile>
     <EmbeddedResource Include="DiffHome.resx">
       <DependentUpon>DiffHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DiffMission.resx">
+      <DependentUpon>DiffMission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DiffStep1.resx">
+      <DependentUpon>DiffStep1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DiffTableCreation.resx">
+      <DependentUpon>DiffTableCreation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LandingForm.resx">
       <DependentUpon>LandingForm.cs</DependentUpon>
@@ -162,6 +207,22 @@
     <Content Include="Resources\DifferentialKeyMissing.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Resources\DifferentialTableCreation1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\DifferentialTableCreation2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\DifferentialTableCreation3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\DifferentialTableCreation4.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\DifferentialTableCreation5.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\DiffHomePage.png" />
     <Content Include="Resources\KeyComplete.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

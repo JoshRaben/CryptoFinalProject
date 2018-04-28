@@ -36,7 +36,7 @@
             // home
             // 
             this.home.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.home.Location = new System.Drawing.Point(353, 300);
+            this.home.Location = new System.Drawing.Point(149, 199);
             this.home.Name = "home";
             this.home.Size = new System.Drawing.Size(75, 23);
             this.home.TabIndex = 0;
@@ -47,7 +47,7 @@
             // infoText
             // 
             this.infoText.AutoSize = true;
-            this.infoText.Location = new System.Drawing.Point(226, 92);
+            this.infoText.Location = new System.Drawing.Point(12, 66);
             this.infoText.Name = "infoText";
             this.infoText.Size = new System.Drawing.Size(349, 26);
             this.infoText.TabIndex = 1;
@@ -57,7 +57,7 @@
             // discordInviteText
             // 
             this.discordInviteText.AutoSize = true;
-            this.discordInviteText.Location = new System.Drawing.Point(339, 196);
+            this.discordInviteText.Location = new System.Drawing.Point(136, 135);
             this.discordInviteText.Name = "discordInviteText";
             this.discordInviteText.Size = new System.Drawing.Size(100, 13);
             this.discordInviteText.TabIndex = 2;
@@ -67,7 +67,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(382, 324);
             this.Controls.Add(this.discordInviteText);
             this.Controls.Add(this.infoText);
             this.Controls.Add(this.home);
