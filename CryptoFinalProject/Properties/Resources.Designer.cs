@@ -31,9 +31,7 @@ namespace CryptoFinalProject.Properties {
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
         internal Resources() {
         }
-
-        public static object Linear_K1_Step1 { get; internal set; }
-
+        
         /// <summary>
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
@@ -59,6 +57,16 @@ namespace CryptoFinalProject.Properties {
             }
             set {
                 resourceCulture = value;
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DESwithM {
+            get {
+                object obj = ResourceManager.GetObject("DESwithM", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         

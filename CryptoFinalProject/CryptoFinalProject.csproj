@@ -145,6 +145,8 @@
     <None Include="Resources\Untitled Diagram %281%29.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\DESwithM.PNG" />
+    <None Include="Resources\DESwithM1.PNG" />
     <Content Include="Resources\DifferentialKeyMissing.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

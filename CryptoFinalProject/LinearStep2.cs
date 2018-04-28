@@ -58,10 +58,17 @@ namespace CryptoFinalProject
 
         private void next_Click(object sender, EventArgs e)
         {
-            LinearStep3 linearStep3 = new LinearStep3();
-            linearStep3.Tag = this;
-            linearStep3.Show(this);
-            Hide();
+            if (CurrentStep == 6)
+            {
+                LinearStep3 linearStep3 = new LinearStep3();
+                linearStep3.Tag = this;
+                linearStep3.Show(this);
+                Hide();
+            }
+            else
+            {
+                MessageBox.Show("You have not yet finished viewing each slide!");
+            }
         }
     }
 }
