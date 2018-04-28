@@ -11,7 +11,7 @@ using System.Windows.Forms;
 namespace CryptoFinalProject
 {
     public partial class LandingForm : Form
-    {
+    {        
         public LandingForm()
         {
             InitializeComponent();

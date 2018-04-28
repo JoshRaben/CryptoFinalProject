@@ -31,6 +31,10 @@
             this.infoText = new System.Windows.Forms.Label();
             this.linear = new System.Windows.Forms.Button();
             this.differential = new System.Windows.Forms.Button();
+            this.LinearKeyTxtBox = new System.Windows.Forms.TextBox();
+            this.linearKeyText = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.DiffKeyTxtBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // infoText
@@ -46,7 +50,7 @@
             // linear
             // 
             this.linear.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linear.Location = new System.Drawing.Point(171, 207);
+            this.linear.Location = new System.Drawing.Point(149, 207);
             this.linear.Name = "linear";
             this.linear.Size = new System.Drawing.Size(151, 68);
             this.linear.TabIndex = 3;
@@ -58,7 +62,7 @@
             // differential
             // 
             this.differential.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.differential.Location = new System.Drawing.Point(471, 207);
+            this.differential.Location = new System.Drawing.Point(516, 207);
             this.differential.Name = "differential";
             this.differential.Size = new System.Drawing.Size(163, 68);
             this.differential.TabIndex = 4;
@@ -66,11 +70,47 @@
             this.differential.UseVisualStyleBackColor = true;
             this.differential.Click += new System.EventHandler(this.differential_Click);
             // 
+            // LinearKeyTxtBox
+            // 
+            this.LinearKeyTxtBox.Location = new System.Drawing.Point(171, 346);
+            this.LinearKeyTxtBox.Name = "LinearKeyTxtBox";
+            this.LinearKeyTxtBox.Size = new System.Drawing.Size(100, 20);
+            this.LinearKeyTxtBox.TabIndex = 5;
+            // 
+            // linearKeyText
+            // 
+            this.linearKeyText.AutoSize = true;
+            this.linearKeyText.Location = new System.Drawing.Point(83, 307);
+            this.linearKeyText.Name = "linearKeyText";
+            this.linearKeyText.Size = new System.Drawing.Size(311, 13);
+            this.linearKeyText.TabIndex = 6;
+            this.linearKeyText.Text = "Enter the Secret Key given upon completing Linear Cryptanalysis";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(442, 307);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(332, 13);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Enter the Secret Key given upon completing Differential Cryptanalysis";
+            // 
+            // DiffKeyTxtBox
+            // 
+            this.DiffKeyTxtBox.Location = new System.Drawing.Point(546, 346);
+            this.DiffKeyTxtBox.Name = "DiffKeyTxtBox";
+            this.DiffKeyTxtBox.Size = new System.Drawing.Size(100, 20);
+            this.DiffKeyTxtBox.TabIndex = 7;
+            // 
             // LandingForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.DiffKeyTxtBox);
+            this.Controls.Add(this.linearKeyText);
+            this.Controls.Add(this.LinearKeyTxtBox);
             this.Controls.Add(this.differential);
             this.Controls.Add(this.linear);
             this.Controls.Add(this.infoText);
@@ -86,5 +126,9 @@
         private System.Windows.Forms.Label infoText;
         private System.Windows.Forms.Button linear;
         private System.Windows.Forms.Button differential;
+        private System.Windows.Forms.TextBox LinearKeyTxtBox;
+        private System.Windows.Forms.Label linearKeyText;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox DiffKeyTxtBox;
     }
 }

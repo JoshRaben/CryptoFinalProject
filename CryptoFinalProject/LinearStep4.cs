@@ -15,11 +15,11 @@ namespace CryptoFinalProject
         public LinearStep4()
         {
             InitializeComponent();
-            linearKeyPicBox.Image = Image.FromFile(@"Resources\KeyLinearHalf.png");
         }
 
         private void keyClaimBtn_Click(object sender, EventArgs e)
         {
+            
             LandingForm landingForm = new LandingForm();
             landingForm.Tag = this;
             landingForm.Show(this);
