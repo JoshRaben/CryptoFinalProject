@@ -10,22 +10,17 @@ using System.Windows.Forms;
 
 namespace CryptoFinalProject
 {
-    public partial class DiffHome : Form
+    public partial class DiffStep4 : Form
     {
-        public DiffHome()
+        public DiffStep4()
         {
             InitializeComponent();
+            infoText.Text = "Congratulations! You've successfully made your way though Differential\n" +
+                            "Cryptanalysis! Here is the secret key needed to pass through to the\n" +
+                            "final secret. Make sure you write this key down.";
         }
 
-        private void next_Click_1(object sender, EventArgs e)
-        {
-            DiffMission diffMission = new DiffMission();
-            diffMission.Tag = this;
-            diffMission.Show(this);
-            Hide();
-        }
-
-        private void back_Click(object sender, EventArgs e)
+        private void keyClaimBtn_Click(object sender, EventArgs e)
         {
             LandingForm landingForm = new LandingForm();
             landingForm.Tag = this;

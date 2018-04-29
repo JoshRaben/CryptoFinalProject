@@ -10,19 +10,11 @@ using System.Windows.Forms;
 
 namespace CryptoFinalProject
 {
-    public partial class DiffHome : Form
+    public partial class DiffMission : Form
     {
-        public DiffHome()
+        public DiffMission()
         {
             InitializeComponent();
-        }
-
-        private void next_Click_1(object sender, EventArgs e)
-        {
-            DiffMission diffMission = new DiffMission();
-            diffMission.Tag = this;
-            diffMission.Show(this);
-            Hide();
         }
 
         private void back_Click(object sender, EventArgs e)
@@ -30,6 +22,14 @@ namespace CryptoFinalProject
             LandingForm landingForm = new LandingForm();
             landingForm.Tag = this;
             landingForm.Show(this);
+            Hide();
+        }
+
+        private void next_Click(object sender, EventArgs e)
+        {
+            DiffStep1 diffStep1 = new DiffStep1();
+            diffStep1.Tag = this;
+            diffStep1.Show(this);
             Hide();
         }
     }

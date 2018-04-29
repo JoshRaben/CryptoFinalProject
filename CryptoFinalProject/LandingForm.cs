@@ -42,7 +42,7 @@ namespace CryptoFinalProject
             return false;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void submitKeysBtn_Click(object sender, EventArgs e)
         {
             if (validateKeys())
             {

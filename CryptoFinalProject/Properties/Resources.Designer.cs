@@ -73,16 +73,6 @@ namespace CryptoFinalProject.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap secret {
-            get {
-                object obj = ResourceManager.GetObject("secret", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Untitled_Diagram {
             get {
                 object obj = ResourceManager.GetObject("Untitled Diagram", resourceCulture);
