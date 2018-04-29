@@ -37,7 +37,7 @@
             // keyClaimBtn
             // 
             this.keyClaimBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.keyClaimBtn.Location = new System.Drawing.Point(234, 268);
+            this.keyClaimBtn.Location = new System.Drawing.Point(203, 206);
             this.keyClaimBtn.Name = "keyClaimBtn";
             this.keyClaimBtn.Size = new System.Drawing.Size(108, 49);
             this.keyClaimBtn.TabIndex = 0;
@@ -49,7 +49,7 @@
             // 
             this.keyString.AutoSize = true;
             this.keyString.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.keyString.Location = new System.Drawing.Point(256, 195);
+            this.keyString.Location = new System.Drawing.Point(244, 136);
             this.keyString.Name = "keyString";
             this.keyString.Size = new System.Drawing.Size(66, 18);
             this.keyString.TabIndex = 2;
@@ -59,16 +59,17 @@
             // 
             this.infoText.AutoSize = true;
             this.infoText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.infoText.Location = new System.Drawing.Point(66, 46);
+            this.infoText.Location = new System.Drawing.Point(27, 50);
             this.infoText.Name = "infoText";
-            this.infoText.Size = new System.Drawing.Size(0, 20);
+            this.infoText.Size = new System.Drawing.Size(490, 20);
             this.infoText.TabIndex = 3;
+            this.infoText.Text = "put some example text here next time so it\'s not invisible on the page";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(187, 193);
+            this.label1.Location = new System.Drawing.Point(199, 134);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(39, 20);
             this.label1.TabIndex = 4;
@@ -78,7 +79,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(589, 458);
+            this.ClientSize = new System.Drawing.Size(550, 335);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.infoText);
             this.Controls.Add(this.keyString);

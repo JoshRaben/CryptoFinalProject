@@ -145,6 +145,9 @@
     <EmbeddedResource Include="DiffStep1.resx">
       <DependentUpon>DiffStep1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DiffStep4.resx">
+      <DependentUpon>DiffStep4.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DiffTableCreation.resx">
       <DependentUpon>DiffTableCreation.cs</DependentUpon>
     </EmbeddedResource>
