@@ -24,5 +24,11 @@ namespace CryptoFinalProject
             landingForm.Show(this);
             Hide();
         }
+
+        private void discordInviteText_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            string url = "https://discord.gg/EtHhZdW";
+            System.Diagnostics.Process.Start(url);
+        }
     }
 }

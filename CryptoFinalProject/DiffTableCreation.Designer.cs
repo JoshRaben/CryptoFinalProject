@@ -109,6 +109,7 @@
             this.Controls.Add(this.back);
             this.Controls.Add(this.home);
             this.Name = "DiffTableCreation";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DiffTableCreation";
             ((System.ComponentModel.ISupportInitialize)(this.K1GuessPicBox)).EndInit();
             this.ResumeLayout(false);

@@ -27,5 +27,10 @@ namespace CryptoFinalProject
             landingForm.Show(this);
             Hide();
         }
+
+        private void infoText_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

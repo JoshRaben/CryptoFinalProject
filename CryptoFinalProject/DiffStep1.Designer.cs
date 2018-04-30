@@ -32,7 +32,6 @@
             this.backBtn = new System.Windows.Forms.Button();
             this.nextBtn = new System.Windows.Forms.Button();
             this.homeBtn = new System.Windows.Forms.Button();
-            this.feedbackText = new System.Windows.Forms.Label();
             this.feedbackTitle = new System.Windows.Forms.Label();
             this.titleLabel = new System.Windows.Forms.Label();
             this.tableCreation = new System.Windows.Forms.Button();
@@ -41,12 +40,13 @@
             this.ansListBox1 = new System.Windows.Forms.CheckedListBox();
             this.infoText1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.feedbackText = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // backBtn
             // 
-            this.backBtn.Location = new System.Drawing.Point(790, 490);
+            this.backBtn.Location = new System.Drawing.Point(888, 489);
             this.backBtn.Name = "backBtn";
             this.backBtn.Size = new System.Drawing.Size(75, 23);
             this.backBtn.TabIndex = 9;
@@ -56,7 +56,7 @@
             // 
             // nextBtn
             // 
-            this.nextBtn.Location = new System.Drawing.Point(890, 490);
+            this.nextBtn.Location = new System.Drawing.Point(988, 489);
             this.nextBtn.Name = "nextBtn";
             this.nextBtn.Size = new System.Drawing.Size(75, 23);
             this.nextBtn.TabIndex = 8;
@@ -74,20 +74,11 @@
             this.homeBtn.UseVisualStyleBackColor = true;
             this.homeBtn.Click += new System.EventHandler(this.homeBtn_Click);
             // 
-            // feedbackText
-            // 
-            this.feedbackText.AutoSize = true;
-            this.feedbackText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.feedbackText.Location = new System.Drawing.Point(673, 280);
-            this.feedbackText.Name = "feedbackText";
-            this.feedbackText.Size = new System.Drawing.Size(0, 16);
-            this.feedbackText.TabIndex = 22;
-            // 
             // feedbackTitle
             // 
             this.feedbackTitle.AutoSize = true;
             this.feedbackTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.feedbackTitle.Location = new System.Drawing.Point(594, 280);
+            this.feedbackTitle.Location = new System.Drawing.Point(559, 264);
             this.feedbackTitle.Name = "feedbackTitle";
             this.feedbackTitle.Size = new System.Drawing.Size(73, 16);
             this.feedbackTitle.TabIndex = 21;
@@ -97,7 +88,7 @@
             // 
             this.titleLabel.AutoSize = true;
             this.titleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.titleLabel.Location = new System.Drawing.Point(309, 53);
+            this.titleLabel.Location = new System.Drawing.Point(353, 44);
             this.titleLabel.Name = "titleLabel";
             this.titleLabel.Size = new System.Drawing.Size(360, 24);
             this.titleLabel.TabIndex = 20;
@@ -116,10 +107,10 @@
             // infoText2
             // 
             this.infoText2.AutoSize = true;
-            this.infoText2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.infoText2.Location = new System.Drawing.Point(12, 89);
+            this.infoText2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.infoText2.Location = new System.Drawing.Point(39, 77);
             this.infoText2.Name = "infoText2";
-            this.infoText2.Size = new System.Drawing.Size(957, 64);
+            this.infoText2.Size = new System.Drawing.Size(976, 90);
             this.infoText2.TabIndex = 18;
             this.infoText2.Text = resources.GetString("infoText2.Text");
             // 
@@ -138,16 +129,17 @@
             this.ansListBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ansListBox1.FormattingEnabled = true;
             this.ansListBox1.Items.AddRange(new object[] {
-            "(6, 3)   ->   5",
-            "(6, 5)   ->   6",
-            "(4, 4)   ->   9",
-            "(3, 2)   ->   6",
-            "(1, 3)   ->   6",
-            "(2, 2)   ->   1"});
+            "(4, 3)   ->   0",
+            "(2, 4)   ->   6",
+            "(7, 4)   ->   4",
+            "(4, 4)   ->   2",
+            "(7, 5)   ->   2",
+            "(5, 4)   ->   0"});
             this.ansListBox1.Location = new System.Drawing.Point(424, 307);
             this.ansListBox1.Name = "ansListBox1";
             this.ansListBox1.Size = new System.Drawing.Size(117, 106);
             this.ansListBox1.TabIndex = 16;
+            this.ansListBox1.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.ansListBox1_ItemCheck);
             // 
             // infoText1
             // 
@@ -170,11 +162,20 @@
             this.pictureBox1.TabIndex = 14;
             this.pictureBox1.TabStop = false;
             // 
+            // feedbackText
+            // 
+            this.feedbackText.AutoSize = true;
+            this.feedbackText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.feedbackText.Location = new System.Drawing.Point(638, 264);
+            this.feedbackText.Name = "feedbackText";
+            this.feedbackText.Size = new System.Drawing.Size(0, 16);
+            this.feedbackText.TabIndex = 22;
+            // 
             // DiffStep1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(977, 525);
+            this.ClientSize = new System.Drawing.Size(1075, 524);
             this.Controls.Add(this.feedbackText);
             this.Controls.Add(this.feedbackTitle);
             this.Controls.Add(this.titleLabel);
@@ -188,6 +189,7 @@
             this.Controls.Add(this.backBtn);
             this.Controls.Add(this.nextBtn);
             this.Name = "DiffStep1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DiffStep1";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -200,7 +202,6 @@
         private System.Windows.Forms.Button backBtn;
         private System.Windows.Forms.Button nextBtn;
         private System.Windows.Forms.Button homeBtn;
-        private System.Windows.Forms.Label feedbackText;
         private System.Windows.Forms.Label feedbackTitle;
         private System.Windows.Forms.Label titleLabel;
         private System.Windows.Forms.Button tableCreation;
@@ -209,5 +210,6 @@
         private System.Windows.Forms.CheckedListBox ansListBox1;
         private System.Windows.Forms.Label infoText1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label feedbackText;
     }
 }

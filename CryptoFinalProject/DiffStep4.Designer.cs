@@ -50,8 +50,10 @@
             this.infoText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.infoText.Location = new System.Drawing.Point(30, 67);
             this.infoText.Name = "infoText";
-            this.infoText.Size = new System.Drawing.Size(0, 20);
+            this.infoText.Size = new System.Drawing.Size(97, 20);
             this.infoText.TabIndex = 7;
+            this.infoText.Text = "Sample Text";
+            this.infoText.Click += new System.EventHandler(this.infoText_Click);
             // 
             // keyString
             // 
@@ -84,6 +86,7 @@
             this.Controls.Add(this.keyString);
             this.Controls.Add(this.keyClaimBtn);
             this.Name = "DiffStep4";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DiffStep4";
             this.ResumeLayout(false);
             this.PerformLayout();

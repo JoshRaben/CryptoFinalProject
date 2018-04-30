@@ -28,15 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Secret));
             this.home = new System.Windows.Forms.Button();
             this.infoText = new System.Windows.Forms.Label();
-            this.discordInviteText = new System.Windows.Forms.Label();
+            this.discordInviteText = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // home
             // 
             this.home.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.home.Location = new System.Drawing.Point(149, 199);
+            this.home.Location = new System.Drawing.Point(190, 206);
             this.home.Name = "home";
             this.home.Size = new System.Drawing.Size(75, 23);
             this.home.TabIndex = 0;
@@ -47,27 +48,31 @@
             // infoText
             // 
             this.infoText.AutoSize = true;
+            this.infoText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.infoText.Location = new System.Drawing.Point(12, 66);
             this.infoText.Name = "infoText";
-            this.infoText.Size = new System.Drawing.Size(349, 26);
+            this.infoText.Size = new System.Drawing.Size(439, 48);
             this.infoText.TabIndex = 1;
-            this.infoText.Text = "Congratulations on completing both Linear and Differential Cryptanalysis! \r\n     " +
-    "                    As a reward here is a link to our Discord server! \r\n";
+            this.infoText.Text = resources.GetString("infoText.Text");
             // 
             // discordInviteText
             // 
             this.discordInviteText.AutoSize = true;
-            this.discordInviteText.Location = new System.Drawing.Point(136, 135);
+            this.discordInviteText.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.discordInviteText.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
+            this.discordInviteText.Location = new System.Drawing.Point(120, 148);
             this.discordInviteText.Name = "discordInviteText";
-            this.discordInviteText.Size = new System.Drawing.Size(100, 13);
-            this.discordInviteText.TabIndex = 2;
-            this.discordInviteText.Text = "PUT INVITE HERE";
+            this.discordInviteText.Size = new System.Drawing.Size(216, 18);
+            this.discordInviteText.TabIndex = 3;
+            this.discordInviteText.TabStop = true;
+            this.discordInviteText.Text = "https://discord.gg/EtHhZdW";
+            this.discordInviteText.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.discordInviteText_LinkClicked);
             // 
             // Secret
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(382, 324);
+            this.ClientSize = new System.Drawing.Size(456, 276);
             this.Controls.Add(this.discordInviteText);
             this.Controls.Add(this.infoText);
             this.Controls.Add(this.home);
@@ -83,6 +88,6 @@
 
         private System.Windows.Forms.Button home;
         private System.Windows.Forms.Label infoText;
-        private System.Windows.Forms.Label discordInviteText;
+        private System.Windows.Forms.LinkLabel discordInviteText;
     }
 }

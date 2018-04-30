@@ -145,6 +145,12 @@
     <EmbeddedResource Include="DiffStep1.resx">
       <DependentUpon>DiffStep1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DiffStep2.resx">
+      <DependentUpon>DiffStep2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DiffStep3.resx">
+      <DependentUpon>DiffStep3.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DiffStep4.resx">
       <DependentUpon>DiffStep4.cs</DependentUpon>
     </EmbeddedResource>
@@ -205,11 +211,39 @@
     <None Include="Resources\Untitled Diagram %281%29.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\ChoosingPlaintexts1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\ChoosingPlaintexts2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\ChoosingPlaintexts3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\ChoosingPlaintexts4.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\ChoosingPlaintexts5.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\ChoosingPlaintexts6.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\ChoosingPlaintexts7.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\ChoosingPlaintexts8.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\ChoosingPlaintexts9.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Resources\DESwithM.PNG" />
     <None Include="Resources\DESwithM1.PNG" />
     <Content Include="Resources\DifferentialKeyMissing.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Resources\DifferentialTable.png" />
     <Content Include="Resources\DifferentialTableCreation1.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

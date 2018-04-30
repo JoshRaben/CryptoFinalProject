@@ -117,14 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="infoText1.Text" xml:space="preserve">
-    <value>Your task, once again, is to determine the values of K1 and K2, this time using the 
-Differential Cryptanalysis method. This attack, unlike the Linear method, is a 
-*Chosen Plaintext* attack, where the attacker has access to the cipher and can encrypt 
-whatever input he wants and receive its encrypted output. We will then use another 
-property of the inputs/outputs to identify relationships and use math to reduce the 
-amount of comparisons needed overall to crack the key.</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="pictureBox1.ErrorImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

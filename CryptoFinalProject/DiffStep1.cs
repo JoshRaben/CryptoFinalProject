@@ -52,17 +52,20 @@ namespace CryptoFinalProject
         private void submitAnsBtn_Click(object sender, EventArgs e)
         {
             string currItem = ansListBox1.SelectedItem.ToString();
-            if ((currItem == "(4, 4)   ->   9") || (currItem == "(2, 2)   ->   1"))//if they picked one of the correct answers
-            {
-                feedbackText.Text = "Correct! The most optimal masks displayed on the table\n" +
-                                    "are (4, 4) and (2, 2), because they parities they produced\n" +
-                                    "out of the 10 samples were the furthest from 50%.";
+            if ((currItem == "(2, 4)   ->   6"))//if they picked one of the correct answers
+            {   
+                feedbackText.Text = "Correct! We want to choose the differentials that\n" +
+                                    "the most of the input/output pairs produced. This way,\n" +
+                                    "when we choose our plaintext, we can make to only choose\n" +
+                                    "messages which also follows this pattern.";
                 isCorrect = true;
             }
             else //they picked the wrong answer
             {
-                feedbackText.Text = "Incorrect. Remember, we want our masks to make the \n" +
-                                    "parities of the texts to seem 'random'.";
+                feedbackText.Text = "Incorrect. Think again about what we are trying to accomplish\n" +
+                                    "here. We are trying to identify  patterns that occur often while\n" +
+                                    "using our S-Box. We want to maximize the amount of messages that\n" +
+                                    "follow the certain pattern when we choose our plaintext in the later steps.";
                 isCorrect = false;
             }
         }
@@ -73,6 +76,12 @@ namespace CryptoFinalProject
             diffTableCreation.Tag = this;
             diffTableCreation.Show(this);
             Hide();
+        }
+
+        private void ansListBox1_ItemCheck(object sender, ItemCheckEventArgs e)
+        {
+            for (int i = 0; i < ansListBox1.Items.Count; ++i)
+                if (i != e.Index) ansListBox1.SetItemChecked(i, false);
         }
     }
 }
